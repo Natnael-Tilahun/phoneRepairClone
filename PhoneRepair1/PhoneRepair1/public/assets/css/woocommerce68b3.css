@@ -1,0 +1,42 @@
+/* ------------------------------------------------
+Project:   iFixandRepair - Software Landing Page HTML5 Template
+Author:    Danilo Avilan
+------------------------------------------------ */
+.woo-section .page-title {
+	display: none !important;
+}
+.woo-section h2, .woo-section h1{
+	line-height: inherit;
+	font-weight: unset;
+}
+.woo-section h1{
+	font-size: xx-large;
+}
+.woo-section li.product{
+	padding: 20px 20px !important;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
+	box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
+}
+.woocommerce-checkout .col-1, .woocommerce-checkout .col-2{
+	flex: 0 0 100%;
+	max-width: inherit;
+}
+.form-row {
+	flex-direction: column;
+}
+.entry {
+	margin: 8% 2% 0;
+}
+@media only screen and (max-width: 420px) {
+	.woo-section li.product{
+		width: 100% !important;
+	}
+	.entry {
+		margin: 25% 2% 0;
+	}
+	.woo-section h1{
+		font-size: x-large;
+	}
+}
+}

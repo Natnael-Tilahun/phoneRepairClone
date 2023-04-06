@@ -1,0 +1,32 @@
+:root {
+  --thm-root1-color: #1e2877;
+  --thm-root2-color: #edca59;
+  --thm-primary-color: #ff0000;
+  --thm-background: #fff;
+  --thm-secondary-background: #1a1a1a;
+  --thm-secondary-color: #f5f5f5;
+  --thm-font: "Manrope", sans-serif;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
