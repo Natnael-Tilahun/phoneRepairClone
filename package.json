@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "react-typed": "^1.2.0",
+    "remixicon": "^3.1.0",
+    "remixicon-react": "^1.0.0"
+  }
+}

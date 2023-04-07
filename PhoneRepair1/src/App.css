@@ -1,11 +1,11 @@
 :root {
-  --thm-root1-color: #1e2877;
-  --thm-root2-color: #edca59;
-  --thm-primary-color: #ff0000;
+  --thm-root1-color: #79d2e3;
+  --thm-root2-color: #fff;
+  --thm-primary-color: #000;
   --thm-background: #fff;
-  --thm-secondary-background: #1a1a1a;
-  --thm-secondary-color: #f5f5f5;
-  --thm-font: "Manrope", sans-serif;
+  --thm-secondary-background: #f3f5ff;
+  --thm-secondary-color: #282925;
+  --thm-font: "Poppins", sans-serif;
 }
 
 @keyframes logo-spin {
