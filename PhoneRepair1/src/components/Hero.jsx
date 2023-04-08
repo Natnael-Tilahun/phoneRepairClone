@@ -3,13 +3,7 @@ import Typed from "react-typed";
 
 export const Hero = () => {
   return (
-    <section className="relative h-[calc(100vh-145px)] w-full bg-[url('https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/bg/bannerdesktop.jpg')] bg-cover bg-center  bg-no-repeat text-lg md:text-2xl">
-      {/* <img
-        // src="..\public\assets\images\bg\banner2.2.jpg"
-        // src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/bg/bannerdesktop.jpg"
-        alt="Background Image"
-        className="h-full w-full object-cover"
-      /> */}
+    <section className="relative h-[calc(100vh-100px)] w-full bg-[url('..\public\assets\images\bg\banner2.2.jpg')]  bg-cover bg-center bg-no-repeat text-lg md:h-[calc(100vh-145px)] md:bg-[url('https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/bg/bannerdesktop.jpg')] md:text-2xl">
       <div className="absolute inset-0 bg-thm_root1_color bg-gradient-to-r from-cyan-400 to-white opacity-30"></div>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <h5 className="letter-space-1 mb-2 uppercase tracking-widest text-white">
