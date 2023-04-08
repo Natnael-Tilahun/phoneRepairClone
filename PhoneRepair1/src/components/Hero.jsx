@@ -11,7 +11,7 @@ export const Hero = () => {
         </h5>
         <h1 className="mb-4 text-white">
           <span
-            className="cursor text-3xl font-medium md:text-5xl lg:font-semibold"
+            className="cursor text-3xl font-medium md:text-5xl lg:font-medium"
             data-cursordisplay="_"
             data-owner="some-id"
             style={{ transition: "all 0.1s ease 0s", opacity: 1 }}
@@ -33,7 +33,7 @@ export const Hero = () => {
         <h3 className=" mb-4 tracking-wider text-white">Broken? Not anymore</h3>
         <a
           id="banner-cta"
-          className=" rounded-lg bg-thm_root1_color px-4 py-2 font-medium"
+          className=" rounded-lg bg-thm_root1_color px-7 py-2 font-normal text-lg"
           data-wow-duration="3s"
           data-wow-delay="0.5s"
           href="#store-finder"
@@ -54,7 +54,7 @@ export const Hero = () => {
               className=""
             />
           </span> */}
-          <span className="">epair MyDevice</span>
+          <span className="">epair My Device</span>
           {/* <span>e</span>
           <span>p</span>
           <span>a</span>

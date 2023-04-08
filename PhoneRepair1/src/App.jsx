@@ -3,6 +3,7 @@ import "./App.css";
 import { TopHeader } from "./components/TopHeader";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
+import { StoreFinder } from "./components/StoreFinder";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
       <TopHeader />
       <Header />
       <Hero />
+      <StoreFinder />
     </div>
   );
 }
