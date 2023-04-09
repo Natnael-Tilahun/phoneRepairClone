@@ -10,9 +10,9 @@ export const Header = () => {
   }
 
   return (
-    <nav className="flex h-12 w-full flex-nowrap items-center justify-between border-2 bg-thm_background px-[5%] md:h-[70px] md:px-[19%] md:py-2 ">
+    <nav className="flex md:h-12 w-full flex-nowrap items-center justify-between border-2 bg-thm_background px-[5%] lg:h-[70px] md:px-[10%] lg:px-[19%] md:py-2 ">
       <button
-        className="flex items-center px-0 py-2 md:hidden "
+        className="flex items-center px-0 py-2 lg:hidden "
         onClick={toggleMenu}
       >
         {collapseNav && (
@@ -35,7 +35,7 @@ export const Header = () => {
         id="logo-img"
         alt="iFixandRepair Logo"
         src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/logo.png"
-        className="lazyload h-8 bg-center md:h-16 md:py-1 "
+        className="lazyload h-8 bg-center md:h-12 md:py-1 "
         // src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
       />
       <ul className="hidden gap-8 text-sm text-thm_secondary_color md:gap-10 md:tracking-wider lg:flex">
