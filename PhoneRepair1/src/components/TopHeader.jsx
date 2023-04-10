@@ -2,7 +2,7 @@ import React from "react";
 
 export const TopHeader = () => {
   return (
-    <div className=" flex w-full flex-col items-center bg-thm_root1_color px-[6%] py-1 text-sm md:flex-row md:justify-between lg:h-10 lg:px-[19%] lg:py-0">
+    <div className=" flex w-full flex-col items-center bg-thm_root1_color px-[6%] py-1 text-sm md:flex-row md:justify-between lg:h-10 lg:px-[19%] xl:px-32 lg:py-0">
       <ul className="flex items-center gap-2 text-thm_primary_color lg:gap-9">
         <li>Addis Abeba, Ethiopia</li>
         <li>+251933654654</li>

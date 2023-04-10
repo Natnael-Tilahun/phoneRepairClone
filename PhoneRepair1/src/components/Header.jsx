@@ -10,7 +10,7 @@ export const Header = () => {
   }
 
   return (
-    <nav className="flex md:h-12 w-full flex-nowrap items-center justify-between border-2 bg-thm_background px-[5%] lg:h-[70px] md:px-[10%] lg:px-[19%] md:py-2 ">
+    <nav className="flex md:h-12 w-full flex-nowrap items-center justify-between border-2 bg-thm_background px-[5%] lg:h-[70px] md:px-[10%] lg:px-[19% xl:px-32 md:py-2 ">
       <button
         className="flex items-center px-0 py-2 lg:hidden "
         onClick={toggleMenu}

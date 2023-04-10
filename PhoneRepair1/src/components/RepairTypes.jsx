@@ -2,7 +2,7 @@ import React from "react";
 
 function RepairTypes() {
   return (
-    <div className="h-full w-full px-[5%] py-20 text-xl md:text-3xl tracking-littelwider md:px-[12%] lg:px-[6%] xl:px-[13%]">
+    <div className="h-full w-full px-[5%] py-20 text-xl md:text-3xl tracking-littelwider md:px-[12%] lg:px-[6%] xl:px-32 ">
       <div className="flex flex-col items-center justify-center gap-2">
         <h1>What can we</h1>
         <h1>

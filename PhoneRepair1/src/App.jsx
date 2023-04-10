@@ -7,6 +7,8 @@ import { StoreFinder } from "./components/StoreFinder";
 import RepairTypes from "./components/RepairTypes";
 import About from "./components/About";
 import Features from "./components/Features";
+import Process from "./components/Process";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,6 +22,8 @@ function App() {
       <RepairTypes />
       <Features />
       <About />
+      <Process />
+      <Testimonial />
     </div>
   );
 }
