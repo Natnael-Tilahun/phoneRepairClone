@@ -18,13 +18,15 @@ function Testimonial() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 10000,
+    speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
     swipeToSlide: true,
     initialSlide: 0,
     lazyLoad: true,
+    centerPadding: "60px",
     autoplay: true,
+    arrows:false,
     responsive: [
       {
         breakpoint: 750,
@@ -36,7 +38,7 @@ function Testimonial() {
     ],
     customPaging: function(i) {
       return (
-        <a className="">
+        <a className="start-full">
           <div className="w-3 rounded-sm active:bg-thm_root1_color hover:bg-thm_root1_color hover:w-5  h-2 bg-black transform ease-in-out duration-700">
           </div>
         </a>
@@ -44,8 +46,8 @@ function Testimonial() {
     },
   };
   return (
-    <>
-      <div className="flex flex-col bg-thm_background px-4 py-2 md:py-12 md:px-12 lg:flex-row xl:px-32">
+    <div className="bg-thm_background">
+      <div className="flex  flex-col px-4 py-2 md:py-12 md:px-12 lg:flex-row xl:px-32">
         <div className="lg:basis-[50%]">
           <img
             alt="iFixandReapir's staff member handing a repaired device to a happy customer"
@@ -98,13 +100,13 @@ function Testimonial() {
         </h1>
       </div> */}
 
-      <div className="h-full z-10 w-screen bg-thm_background  px-0 py-12  md:px-12 xl:px-32">
+      <div className="h-full  z-10 w-full bg-thm_background  px-0 py-12  md:px-12 xl:px-32">
         <h1 className="md:text-lg tracking-littelwider text-thm_primary_color px-6">
           Your feedback makes us better, share your experience with us across
           our social media channels.
         </h1>{" "}
         <Slider {...settings} className="w-full py-10">
-        <div className="relative drop-shadow-xl shadow-md shadow-slate-200  rounded-lg h-full xl:h-72 flex w-full flex-col bg-thm_background py-14 px-8">
+        <div id="partner-slick" className="relative drop-shadow-xl shadow-md shadow-slate-200  rounded-lg h-full xl:h-72 flex w-full flex-col bg-thm_background py-14 px-8">
             <p className=" tracking-wider text-thm_secondary_color">
               Friendly people, great prices! They do price match with reputable
               phone stores and their repairs come with lifetime warranties! You
@@ -175,7 +177,7 @@ function Testimonial() {
           </div>
         </Slider>
       </div>
-    </>
+    </div>
   );
 }
 

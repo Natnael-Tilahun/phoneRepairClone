@@ -11,6 +11,7 @@ import Process from "./components/Process";
 import Testimonial from "./components/Testimonial";
 import Expects from "./components/Expects";
 import Partners from "./components/Partners";
+import Footer from "./components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,6 +29,7 @@ function App() {
       <Testimonial />
       <Expects />
       <Partners />
+      <Footer />
     </div>
   );
 }

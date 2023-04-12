@@ -3,7 +3,7 @@ import { Button } from "./Button";
 
 function About() {
   return (
-    <div className="flex flex-col items-center gap-5 px-4 pt-16 md:px-12 xl:px-32 lg:flex-row">
+    <div className="flex flex-col items-center gap-5 px-4 pt-16 md:px-12 xl:px-32 bg-thm_background lg:flex-row">
       <div className="flex flex-col items-center gap-2 lg:basis-1/2">
         <h1 className="text-center text-xl md:text-3xl">
           About{" "}

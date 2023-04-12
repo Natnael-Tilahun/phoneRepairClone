@@ -38,11 +38,39 @@ export const Header = () => {
         className="lazyload h-8 bg-center md:h-12 md:py-1 "
         // src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
       />
-      <ul className="hidden gap-8 text-sm text-thm_secondary_color md:gap-10 md:tracking-wider lg:flex">
-        <li>Repairs</li>
-        <li>Locations</li>
-        <li>About</li>
-        <li>Contact Us</li>
+      <ul className="hidden gap-8 text-sm text-thm_primary_color md:gap-10 md:tracking-wider lg:flex ">
+        <li className="header-link hover:text-thm_root1_color transition-all duration-500">
+          <p>Repairs</p>
+          <div className="lazyloaded hidden absolute gap-3 mt-2 mx-2">
+          <div className="lazyloaded  h-[5px] w-[5px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-75"></div>
+          <div className="lazyloaded  h-[5px] w-[5px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-0"></div>
+          <div className="lazyloaded  h-[5px] w-[5px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-100"></div>
+        </div>
+        </li>
+        <li className="header-link hover:text-thm_root1_color transition-all duration-500">
+          <p>Locations</p>
+          <div className="lazyloaded hidden absolute gap-3 mt-2 mx-4">
+          <div className="lazyloaded  h-[5px] w-[5px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-75"></div>
+          <div className="lazyloaded  h-[5px] w-[5px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-0"></div>
+          <div className="lazyloaded  h-[5px] w-[5px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-100"></div>
+        </div>
+        </li>
+        <li className="header-link hover:text-thm_root1_color transition-all duration-500">
+          <p>About</p>
+          <div className="lazyloaded hidden absolute gap-3 mt-2 mx-1">
+          <div className="lazyloaded  h-[5px] w-[5px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-75"></div>
+          <div className="lazyloaded  h-[5px] w-[5px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-0"></div>
+          <div className="lazyloaded  h-[5px] w-[5px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-100"></div>
+        </div>
+        </li>
+        <li className="header-link hover:text-thm_root1_color transition-all duration-500">
+          <p>Contact Us</p>
+          <div className="lazyloaded hidden absolute gap-3 mt-2 mx-4">
+          <div className="lazyloaded  h-[5px] w-[5px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-75"></div>
+          <div className="lazyloaded  h-[5px] w-[5px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-0"></div>
+          <div className="lazyloaded  h-[5px] w-[5px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-100"></div>
+        </div>
+        </li>     
       </ul>
       <img
         id="locations-img"

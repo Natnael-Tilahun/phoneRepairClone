@@ -4,7 +4,7 @@ export const StoreFinder = () => {
   const [collapse, setCollapse] = useState(false);
   const collapseHandler = () => setCollapse((prevState) => !prevState);
   return (
-    <div className="flex h-full w-full py-16 flex-col items-center justify-center px-[5%] md:px-[10%] lg:px-[19%]">
+    <div className="flex bg-thm_background h-full w-full py-16 flex-col items-center justify-center px-[5%] md:px-[10%] lg:px-[19%]">
       <div
         className=" flex w-full rounded-lg bg-thm_root1_color p-4 text-lg uppercase md:w-2/3 lg:w-1/2 "
         onClick={collapseHandler}

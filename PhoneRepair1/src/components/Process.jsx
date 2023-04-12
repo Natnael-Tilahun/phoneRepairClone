@@ -2,13 +2,13 @@ import React from "react";
 
 function Process() {
   return (
-    <div className="bg-thm_secondary_background px-4 py-16 md:px-12 xl:px-32 flex flex-col gap-20">
-      <h1 className=" text-2xl lg:text-4xl tracking-wider text-center">
+    <div className="flex flex-col gap-20 bg-thm_secondary_background px-4 py-16 md:px-12 xl:px-32">
+      <h1 className=" text-center text-2xl tracking-wider lg:text-4xl">
         How to start your repoir?
       </h1>
 
-      <div className="flex flex-col gap-14 lg:flex-row">
-        <div className="flex flex-col items-center justify-center gap-4 basis-1/2 h-full">
+      <div className="flex flex-col gap-12  lg:gap-0 lg:flex-row">
+        <div className="flex h-full basis-1/2 flex-col items-center justify-center gap-4">
           <div className="relative h-36 w-36 rounded-full bg-thm_background shadow-sm">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,13 @@ function Process() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4 basis-1/2 h-full">
+        <div className="hidden  lg:flex gap-3 pt-16">
+          <div className="lazyloaded  h-[10px] w-[10px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-75"></div>
+          <div className="lazyloaded  h-[10px] w-[10px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-0"></div>
+          <div className="lazyloaded  h-[10px] w-[10px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-100"></div>
+        </div>
+
+        <div className="flex h-full basis-1/2 flex-col items-center justify-center gap-4">
           <div className="relative h-36 w-36 rounded-full bg-thm_background shadow-sm">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +61,13 @@ function Process() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4  basis-1/2 h-full">
+        <div className="hidden lg:flex gap-3 pt-16">
+          <div className="lazyloaded  h-[10px] w-[10px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-75"></div>
+          <div className="lazyloaded  h-[10px] w-[10px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-0"></div>
+          <div className="lazyloaded  h-[10px] w-[10px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-100"></div>
+        </div>
+
+        <div className="flex h-full basis-1/2 flex-col items-center  justify-center gap-4">
           <div className="relative h-36 w-36 rounded-full bg-thm_background shadow-sm">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +89,13 @@ function Process() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4 basis-1/2 h-full">
+        <div className="hidden lg:flex gap-3 pt-16">
+          <div className="lazyloaded  h-[10px] w-[10px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-75"></div>
+          <div className="lazyloaded  h-[10px] w-[10px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-0"></div>
+          <div className="lazyloaded  h-[10px] w-[10px] rounded-full bg-thm_root1_color animate-pulse  ease-in-out delay-1000 duration-100"></div>
+        </div>
+
+        <div className="flex h-full basis-1/2 flex-col items-center justify-center gap-4">
           <div className="relative h-36 w-36 rounded-full bg-thm_background shadow-sm">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -100,11 +118,11 @@ function Process() {
         </div>
       </div>
 
-      <div className="text-thm_secondary_color text-center full">
-            After that, one of our expert technicians will contact you to
-            schedule an appointment for your repair. You won’t have to worry
-            about it again.
-        </div>
+      <div className="text-center text-thm_secondary_color">
+        After that, one of our expert technicians will contact you to schedule
+        an appointment for your repair. You won’t have to worry about it again.
+      </div>
+
     </div>
   );
 }

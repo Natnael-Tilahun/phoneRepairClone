@@ -9,14 +9,45 @@
 }
 
 .slick-slide > div {
-  margin: 0 50px;
+  margin: 0 40px;
 }
 .slick-list {
-  margin: 0 -50px;
+  margin: 0 -40px;
 }
 
 .slick-dots li.slick-active button {
   background-color: blue;
+}
+
+.header-link:hover .lazyloaded{
+  display: flex;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 400ms;
+  transition-delay: 0ms;
+}
+
+
+@media (max-width: 850px){
+  .slick-slide > div {
+    margin: 0 30px;
+  }
+  .slick-list {
+    margin: 0 -30px;
+  }
+
+}
+
+@media (max-width: 576px){
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+
 }
 
 @keyframes logo-spin {

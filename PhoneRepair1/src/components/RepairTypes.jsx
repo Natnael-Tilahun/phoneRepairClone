@@ -2,7 +2,7 @@ import React from "react";
 
 function RepairTypes() {
   return (
-    <div className="h-full w-full px-[5%] py-20 text-xl md:text-3xl tracking-littelwider md:px-[12%] lg:px-[6%] xl:px-32 ">
+    <div className="h-full bg-thm_background w-full px-[5%] py-20 text-xl md:text-3xl tracking-littelwider md:px-[12%] lg:px-[6%] xl:px-32 ">
       <div className="flex flex-col items-center justify-center gap-2">
         <h1>What can we</h1>
         <h1>
@@ -79,7 +79,7 @@ function RepairTypes() {
           />
           <h1 className="text-lg w-full text-center">Others</h1>
         </div>
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center py-4">
             <p className="text-sm text-thm_secondary_color">Please verify with your nearest store the repair serice you need.</p>
         </div>
       </div>

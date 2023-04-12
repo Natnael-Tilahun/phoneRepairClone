@@ -3,7 +3,7 @@ import React from "react";
 function Features() {
   return (
     <>
-      <section className="relative flex h-[450px] w-full items-center justify-center bg-[url('https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/banner/why_choose_us.jpg')] bg-cover bg-center bg-no-repeat p-5">
+      <section className="relative  flex h-[450px] w-full items-center justify-center bg-[url('https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/banner/why_choose_us.jpg')] bg-cover bg-center bg-no-repeat p-5">
         <div className="absolute inset-0 bg-thm_root1_color bg-gradient-to-r from-cyan-400 to-indigo-950 opacity-60"></div>
         <div className="absolute inset-0 left-6 right-6 top-1/3 flex h-fit flex-col justify-center bg-gray-600 p-4 text-center text-white opacity-80 lg:left-[20%] lg:right-[20%]">
           <h1 className="text-2xl lg:text-3xl tracking-littelwider">
