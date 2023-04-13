@@ -1,5 +1,6 @@
 import React from "react";
-import { Button } from "./Button";
+import { Button } from "../components/Button";
+import HorizontalLine from "../utils/HorizontalLine";
 
 function About() {
   return (
@@ -11,10 +12,7 @@ function About() {
             iFixandRepair
           </span>
         </h1>
-        <div className="flex justify-center py-2">
-          <hr className="w-7 rounded-md border-[2px] border-gray-300" />
-          <hr className="w-7 rounded-md border-[2px] border-orange-700" />
-        </div>
+       <HorizontalLine className="" />
         <p className=" pb-4 leading-7 text-gray-600">
           With 100+ locations Nationwide, here at iFixandRepair we specialize in
           cellphone repairs and other smart devices such as tablets, computers,

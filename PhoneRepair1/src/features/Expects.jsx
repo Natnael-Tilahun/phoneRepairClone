@@ -7,10 +7,7 @@ function Expects() {
         <h1 className="text-left text-2xl tracking-wider lg:text-4xl">
           Experts on Repairs
         </h1>
-        {/* <div className="flex justify-center py-2">
-            <hr className="w-7 rounded-md border-[2px] border-gray-300" />
-            <hr className="w-7 rounded-md border-[2px] border-orange-700" />
-          </div> */}
+      
         <p className=" text-left text-thm_secondary_color">
           We care for you and that includes having the best and more reliable
           technicians to perform your repairs, and between you and us, they are

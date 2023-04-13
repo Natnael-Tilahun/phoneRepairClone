@@ -2,33 +2,17 @@ import { useState } from "react";
 import "./App.css";
 import { TopHeader } from "./components/TopHeader";
 import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { StoreFinder } from "./components/StoreFinder";
-import RepairTypes from "./components/RepairTypes";
-import About from "./components/About";
-import Features from "./components/Features";
-import Process from "./components/Process";
-import Testimonial from "./components/Testimonial";
-import Expects from "./components/Expects";
-import Partners from "./components/Partners";
-import Footer from "./components/Footer";
+import Footer from "./features/Footer";
+import { Outlet } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App m-0 h-full flex flex-col  box-border w-full font-sans">
+    <div className="App m-0 box-border flex h-full  w-full flex-col font-sans">
       <TopHeader />
       <Header />
-      <Hero />
-      <StoreFinder />
-      <RepairTypes />
-      <Features />
-      <About />
-      <Process />
-      <Testimonial />
-      <Expects />
-      <Partners />
+      <Outlet />
       <Footer />
     </div>
   );

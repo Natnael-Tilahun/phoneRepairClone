@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import HorizontalLine from "../utils/HorizontalLine";
 
 function Partners() {
   const settings = {
@@ -66,13 +67,9 @@ function Partners() {
       <h1 className="text-center text-2xl tracking-wider lg:text-4xl">
         Our Partners
       </h1>
-      <div className="flex justify-center py-2">
-        <hr className="w-7 rounded-md border-[2px] border-gray-300" />
-        <hr className="w-7 rounded-md border-[2px] border-orange-700" />
-      </div>
-
+     <HorizontalLine className="" />
       <Slider {...settings} className="py-10" >
-        <div  className="flex flex-col items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
+        <div  className="flex flex-col h-48 items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
           <img
             alt="Case Mate Logo"
             src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/partners/casemate.png"
@@ -83,7 +80,7 @@ function Partners() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
+        <div className="flex flex-col h-48 items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
           <img
             alt="Case Mate Logo"
             src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/partners/cellhelmet.png"
@@ -94,7 +91,7 @@ function Partners() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
+        <div className="flex flex-col h-48 items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
           <img
             alt="Case Mate Logo"
             src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/partners/dji.png"
@@ -105,7 +102,7 @@ function Partners() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
+        <div className="flex flex-col h-48 items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
           <img
             alt="Case Mate Logo"
             src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/partners/gear4.png"
@@ -116,7 +113,7 @@ function Partners() {
           </p>
         </div>
 
-        <div className=" flex flex-col items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
+        <div className=" flex flex-col h-48 items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
           <img
             alt="Case Mate Logo"
             src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/partners/incipio.png"
@@ -127,7 +124,7 @@ function Partners() {
           </p>
         </div>
 
-        <div className=" flex flex-col items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
+        <div className=" flex flex-col h-48 items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
           <img
             alt="Case Mate Logo"
             src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/partners/lifeproof.png"
@@ -138,7 +135,7 @@ function Partners() {
           </p>
         </div>
 
-        <div className=" flex flex-col items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
+        <div className=" flex flex-col h-48 items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
           <img
             alt="Case Mate Logo"
             src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/partners/mophie.png"
@@ -149,7 +146,7 @@ function Partners() {
           </p>
         </div>
 
-        <div className=" flex flex-col items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
+        <div className=" flex flex-col h-48 items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
           <img
             alt="Case Mate Logo"
             src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/partners/otter.png"
@@ -160,7 +157,7 @@ function Partners() {
           </p>
         </div>
 
-        <div className=" flex flex-col items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
+        <div className=" flex flex-col h-48 items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
           <img
             alt="Case Mate Logo"
             src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/partners/speck.png"
@@ -171,7 +168,7 @@ function Partners() {
           </p>
         </div>
 
-        <div className=" flex flex-col items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
+        <div className=" flex flex-col h-48 items-center  justify-center p-4 shadow-xl drop-shadow-xl rounded-lg">
           <img
             alt="Case Mate Logo"
             src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/partners/ventev.png"

@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
-import { Button } from "./Button";
+import { Button } from "../components/Button";
 
 export const Hero = () => {
   return (
@@ -32,7 +32,7 @@ export const Hero = () => {
           </span>
         </h1>
         <h3 className=" mb-4 tracking-wider text-white">Broken? Not anymore</h3>
-        <Button className="rounded-lg" firstLetter="R" text="epair My Device" />
+        <Button className="rounded-lg py-3" firstLetter="R" text="epair My Device" />
       </div>
     </section>
   );

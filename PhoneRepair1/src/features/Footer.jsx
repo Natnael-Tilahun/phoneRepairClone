@@ -1,8 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="flex w-full flex-col flex-wrap gap-16 xl:gap-10 bg-thm_secondary_background p-4 py-6 text-base tracking-littelwider md:flex-row md:px-12 md:py-12 xl:px-32 xl:py-16">
+    <div className="flex w-full flex-col flex-wrap gap-16 lg:gap-10 bg-thm_secondary_background p-4 py-6 text-base tracking-littelwider md:flex-row sm:px-24 md:px-12 md:py-12 xl:px-32 xl:py-16">
       <div className="w-full md:basis-[50%] lg:basis-[30%]">
         <img
           id="footer-logo-img"
@@ -15,15 +16,15 @@ function Footer() {
         </p>
       </div>
 
-      <div className="flex gap-10 w-full md:basis-[40%] md:justify-center lg:basis-[30%] lg:gap-4 ">
+      <div className="flex gap-10  w-full md:basis-[40%] sm:justify-between md:justify-center lg:basis-[30%] lg:gap-4 ">
         <ul className="flex flex-col gap-3 ">
-          <li>Repairs</li>
-          <li>Locations</li>
-          <li>About</li>
-          <li>Contact Us</li>
+          <NavLink to = "/repairs">Repairs</NavLink>
+          <NavLink to = "/locations">Locations</NavLink>
+          <NavLink to = "/about">About</NavLink>
+          <NavLink to = "/contactus">Contact Us</NavLink>
         </ul>
         <ul className="flex flex-col gap-3 ">
-          <li className="flex gap-2">
+          <li className="flex gap-2 hover:text-thm_root1_color transition-all duration-100000">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +41,7 @@ function Footer() {
             </span>
             <p>Facebook</p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-2 hover:text-thm_root1_color transition-all duration-600">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +58,7 @@ function Footer() {
 
             <p>Instagram</p>
           </li>
-          <li className="flex gap-2">
+          <li className="flex gap-2 hover:text-thm_root1_color transition-all duration-600">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,13 +74,13 @@ function Footer() {
             </span>
             <p>Google</p>
           </li>
-          <li>Franchising</li>
-          <li>Privacy Policy</li>
+          <li className="hover:text-thm_root1_color transition-all duration-600">Franchising</li>
+          <li className="hover:text-thm_root1_color transition-all duration-600">Privacy Policy</li>
         </ul>
       </div>
 
       <div className="flex w-full flex-col gap-2 md:basis-full lg:basis-[30%] lg:gap-3">
-        <p className="w-full whitespace-nowrap">
+        <p className="w-full whitespace-nowrap hover:underline">
           Email: info@ifixandrepair.com
         </p>
         <p>Enter to our Supply Site</p>

@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Keyboard, Scrollbar, Navigation, Pagination } from "swiper";
+import HorizontalLine from "../utils/HorizontalLine";
 
 function Testimonial() {
   const settings = {
@@ -59,10 +60,7 @@ function Testimonial() {
           <h1 className="text-center text-2xl tracking-wider lg:text-4xl">
             Happy Customers
           </h1>
-          <div className="flex justify-center py-2">
-            <hr className="w-7 rounded-md border-[2px] border-gray-300" />
-            <hr className="w-7 rounded-md border-[2px] border-orange-700" />
-          </div>
+         <HorizontalLine className="" />
           <p className="text-left text-thm_secondary_color">
             Our main purpose is to give you the best service. That's why in
             iFixandRepair we strive to be experts in everything about repairs
@@ -85,20 +83,8 @@ function Testimonial() {
             </div>
           </div>
         </div>
-        {/* <div className="w-full px-6 py-12">
-        <h1 className="text-thm_primary_color text-lg tracking-wider">
-          Your feedback makes us better, share your experience with us across
-          our social media channels.
-        </h1>
-      </div> */}
-      </div>
 
-      {/* <div className="w-full px-8 py-8 text-center md:px-12 md:text-left lg:flex-row xl:px-32">
-        <h1 className="text-lg tracking-littelwider text-thm_primary_color">
-          Your feedback makes us better, share your experience with us across
-          our social media channels.
-        </h1>
-      </div> */}
+      </div>
 
       <div className="h-full  z-10 w-full bg-thm_background  px-0 py-12  md:px-12 xl:px-32">
         <h1 className="md:text-lg tracking-littelwider text-thm_primary_color px-6">

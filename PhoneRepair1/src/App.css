@@ -4,16 +4,59 @@
   --thm-primary-color: #000;
   --thm-background: #fff;
   --thm-secondary-background: #f3f5ff;
-  --thm-secondary-color: #aeadb3;
+  --thm-secondary-color: #666;
   --thm-font: "Poppins", sans-serif;
 }
 
-.slick-slide > div {
-  margin: 0 40px;
+@keyframes square {
+  0% {
+    width: 0;
+    height: 0;
+    border-width: 0;
+  }
+  25%{
+    width: 100%;
+    height: 0;
+    border-width: 2px;
+  }
+
+  50% {
+    width: 100%;
+    height: 100%;
+    border-width: 2px;
+  }
+  75%{
+    width: 0%;
+    height: 0%;
+    border-width: 2px;
+  }
+  100% {
+    width: 10%;
+    height: 0%;
+    border-width: 2px;
+  }
 }
+
+.animate-square {
+  animation: square 1s ease-in-out infinite;
+}
+
+ .slick-slide > div {
+  margin: 0 40px;
+} 
 .slick-list {
   margin: 0 -40px;
+}  
+
+/* .team_slide {
+  background: red;
+  margin: 0 -40px;
 }
+
+.team_slider > div{
+  margin: 0 40px;
+  background: #000;
+} */
 
 .slick-dots li.slick-active button {
   background-color: blue;

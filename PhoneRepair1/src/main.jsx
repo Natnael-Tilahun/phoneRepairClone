@@ -2,10 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
+import {BrowserRouter, Route, Routes} from "react-router-dom"
+import About from "./pages/About";
+import Locations from "./pages/Locations";
+import ContactUs from "./pages/ContactUs";
+import Home from "./pages/Home";
+import Repairs from "./pages/Repairs";
 // import "remixicon/fonts/remixicon.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element = {<App />} >
+            <Route path="/" element = { <Home /> } />
+            <Route path="/repairs" element = { <Repairs /> } />
+            <Route path="/about" element = { <About /> } />
+            <Route path="/locations" element = { <Locations />} />
+            <Route path="/contactus" element = { <ContactUs /> } />
+          </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
