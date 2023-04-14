@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../components/Button";
 import HorizontalLine from "../utils/HorizontalLine";
+import { NavLink } from "react-router-dom";
 
 function About() {
   return (
@@ -21,11 +22,14 @@ function About() {
           transform device issues into optimal solutions in the blink of an eye.
         </p>
 
+<NavLink to="/about" >
+
         <Button
           text="ee About"
           firstLetter="S"
-          className="rounded-lg font-medium"
+          className="rounded-lg font-normal py-3"
         />
+</NavLink>
       </div>
       <img
         alt="Picture of Three iFixandRepair's Staff Members"

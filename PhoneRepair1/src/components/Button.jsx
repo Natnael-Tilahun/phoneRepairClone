@@ -1,11 +1,11 @@
 import React from "react";
 
-export const Button = (props) => {
+export const Button = ({ className, firstLetter, text }) => {
   return (
     <div className="">
       <a
         id="banner-cta"
-        className={`"rounded-lg font-normal" bg-thm_root1_color px-7 py-2 text-lg ${props.className}`}
+        className={`"rounded-lg font-normal" bg-thm_root1_color px-7 py-2 text-lg ${className}`}
         data-wow-duration="3s"
         data-wow-delay="0.5s"
         href="#store-finder"
@@ -13,7 +13,7 @@ export const Button = (props) => {
         style={{ display: "initial" }}
       >
         {" "}
-        <span>{props.firstLetter}</span>
+        <span>{firstLetter}</span>
         {/* <span
             className=" cursor-move hover:hidden"
             style={{ transition: "all 0.1s ease 0s", opacity: 1 }}
@@ -26,7 +26,7 @@ export const Button = (props) => {
               className=""
             />
           </span> */}
-        <span className="">{props.text}</span>
+        <span className="">{text}</span>
         {/* <span>e</span>
           <span>p</span>
           <span>a</span>

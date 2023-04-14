@@ -2,15 +2,20 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="flex w-full flex-col flex-wrap gap-16 lg:gap-10 bg-thm_secondary_background p-4 py-6 text-base tracking-littelwider md:flex-row sm:px-24 md:px-12 md:py-12 xl:px-32 xl:py-16">
       <div className="w-full md:basis-[50%] lg:basis-[30%]">
-        <img
-          id="footer-logo-img"
-          alt="logo"
-          src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/logo.png"
-          className="lazyload w-full"
-        />
+        <NavLink to="." onClick={scrollToTop}>
+          <img
+            id="footer-logo-img"
+            alt="logo"
+            src="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/logo.png"
+            className="lazyload w-full"
+          />
+        </NavLink>
         <p className="text-center text-xl tracking-wider lg:pt-3">
           Broken? Not Anymore.
         </p>
@@ -18,10 +23,10 @@ function Footer() {
 
       <div className="flex gap-10  w-full md:basis-[40%] sm:justify-between md:justify-center lg:basis-[30%] lg:gap-4 ">
         <ul className="flex flex-col gap-3 ">
-          <NavLink to = "/repairs">Repairs</NavLink>
-          <NavLink to = "/locations">Locations</NavLink>
-          <NavLink to = "/about">About</NavLink>
-          <NavLink to = "/contactus">Contact Us</NavLink>
+          <NavLink to = "/repairs" onClick={scrollToTop}>Repairs</NavLink>
+          <NavLink to = "/locations" onClick={scrollToTop}>Locations</NavLink>
+          <NavLink to = "/about" onClick={scrollToTop}>About</NavLink>
+          <NavLink to = "/contactus" onClick={scrollToTop}>Contact Us</NavLink>
         </ul>
         <ul className="flex flex-col gap-3 ">
           <li className="flex gap-2 hover:text-thm_root1_color transition-all duration-100000">

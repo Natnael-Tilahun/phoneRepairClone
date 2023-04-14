@@ -11,6 +11,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import HorizontalLine from "../utils/HorizontalLine";
+import Pagination from "../utils/Pagination";
 
 function Partners() {
   const settings = {
@@ -24,8 +25,8 @@ function Partners() {
     lazyLoad: true,
     autoplay: true,
     className: "center",
-    centerMode: true,
-    centerPadding: "0px",
+    // centerMode: true,
+    // centerPadding: "0px",
     arrows: false,
     responsive: [
       {
@@ -55,9 +56,7 @@ function Partners() {
     ],
     customPaging: function (i) {
       return (
-        <a className="">
-          <div className="h-2 w-3 transform rounded-sm bg-black  duration-700 ease-in-out hover:w-5 hover:bg-thm_root1_color active:bg-thm_root1_color"></div>
-        </a>
+        <Pagination className = "w-5" />
       );
     },
   };

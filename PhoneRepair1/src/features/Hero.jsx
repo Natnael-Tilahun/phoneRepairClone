@@ -1,6 +1,9 @@
 import React from "react";
 import Typed from "react-typed";
 import { Button } from "../components/Button";
+import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
 
 export const Hero = () => {
   return (
@@ -32,7 +35,9 @@ export const Hero = () => {
           </span>
         </h1>
         <h3 className=" mb-4 tracking-wider text-white">Broken? Not anymore</h3>
-        <Button className="rounded-lg py-3" firstLetter="R" text="epair My Device" />
+        <HashLink to='/#store_finder' smooth>
+          <Button className="rounded-lg py-3" firstLetter="R" text="epair My Device" />
+        </HashLink>
       </div>
     </section>
   );

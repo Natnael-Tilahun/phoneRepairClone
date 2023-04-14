@@ -1,4 +1,4 @@
-export const DeviceTypes = [
+export const DeviceTypesData = [
     {
       img: "https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/devices/smartphone.png",
       name: "iPhone"

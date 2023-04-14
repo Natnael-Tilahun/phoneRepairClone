@@ -11,8 +11,12 @@ export const Header = () => {
     setCollapseNav(true);
   }
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
-    <nav className="lg:px-[19%] flex w-full flex-nowrap items-center justify-between border-2 bg-thm_background px-[5%] md:h-12 sm:px-[12%] md:px-[10%] md:py-2 lg:h-[70px] xl:px-32 ">
+    <nav className="flex w-full flex-nowrap items-center justify-between border-2 bg-thm_background px-[5%] sm:px-[12%] md:h-12 md:px-[10%] md:py-2 lg:h-[70px] lg:px-[5%] xl:px-32 ">
       <button
         className="flex items-center px-0 py-2 lg:hidden "
         onClick={toggleMenu}
@@ -34,7 +38,7 @@ export const Header = () => {
         )}
       </button>
 
-      <NavLink to="/">
+      <NavLink to="/" onClick={scrollToTop}>
         <img
           id="logo-img"
           alt="iFixandRepair Logo"
@@ -43,9 +47,10 @@ export const Header = () => {
           // src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
         />
       </NavLink>
-      <ul className="hidden gap-8 text-sm text-thm_secondary_color md:gap-10 md:tracking-wider lg:flex ">
+      <ul className="hidden gap-8 text-sm text-thm_primary_color md:gap-10 md:tracking-wider lg:flex ">
         <NavLink
           to="/repairs"
+          onClick={scrollToTop}
           className="header-link transition-all duration-500 hover:text-thm_root1_color"
         >
           <p>Repairs</p>
@@ -57,6 +62,7 @@ export const Header = () => {
         </NavLink>
         <NavLink
           to="/locations"
+          onClick={scrollToTop}
           className="header-link transition-all duration-500 hover:text-thm_root1_color"
         >
           <p>Locations</p>
@@ -68,6 +74,7 @@ export const Header = () => {
         </NavLink>
         <NavLink
           to="/about"
+          onClick={scrollToTop}
           className="header-link transition-all duration-500 hover:text-thm_root1_color"
         >
           <p>About</p>
@@ -79,6 +86,7 @@ export const Header = () => {
         </NavLink>
         <NavLink
           to="/contactus"
+          onClick={scrollToTop}
           className="header-link transition-all duration-500 hover:text-thm_root1_color"
         >
           <p>Contact Us</p>
@@ -90,7 +98,7 @@ export const Header = () => {
         </NavLink>
       </ul>
 
-      <NavLink to="/locations">
+      <NavLink to="/locations" onClick={scrollToTop}>
         <img
           id="locations-img"
           alt="Point of interest Symbol"
@@ -120,13 +128,21 @@ export const Header = () => {
         )}
         <div className="flex h-full flex-col items-center justify-center gap-32">
           <ul className="flex flex-col items-center gap-8 text-2xl font-medium text-thm_root2_color shadow-lg ">
-            <NavLink to="repairs">Repairs</NavLink>
-            <NavLink to="locations">Locations</NavLink>
-            <NavLink to="about">About</NavLink>
-            <NavLink to="contactus">Contact Us</NavLink>
+            <NavLink to="repairs" onClick={scrollToTop}>
+              Repairs
+            </NavLink>
+            <NavLink to="locations" onClick={scrollToTop}>
+              Locations
+            </NavLink>
+            <NavLink to="about" onClick={scrollToTop}>
+              About
+            </NavLink>
+            <NavLink to="contactus" onClick={scrollToTop}>
+              Contact Us
+            </NavLink>
           </ul>
 
-          <NavLink to="/">
+          <NavLink to="/" onClick={scrollToTop}>
             <img
               id="white-logo-img"
               alt="iFixandRepair Logo"

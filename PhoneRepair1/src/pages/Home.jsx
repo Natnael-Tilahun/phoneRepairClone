@@ -11,13 +11,16 @@ import Partners from "../features/Partners";
 
 function Home() {
   return (
-    <div className=" m-0 h-full flex flex-col  box-border w-full font-sans">
+    <div className=" m-0 box-border flex h-full  w-full flex-col font-sans">
       <Hero />
       <StoreFinder />
       <RepairTypes />
       <Features />
       <About />
-      <Process />
+      <Process
+        className="gap-20 bg-thm_secondary_background"
+        horizontalLine={false}
+      />
       <Testimonial />
       <Expects />
       <Partners />

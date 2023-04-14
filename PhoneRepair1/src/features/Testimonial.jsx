@@ -12,8 +12,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // import required modules
-import { Keyboard, Scrollbar, Navigation, Pagination } from "swiper";
 import HorizontalLine from "../utils/HorizontalLine";
+import Pagination from "../utils/Pagination";
+
 
 function Testimonial() {
   const settings = {
@@ -39,10 +40,7 @@ function Testimonial() {
     ],
     customPaging: function(i) {
       return (
-        <a className="start-full">
-          <div className="w-3 rounded-sm active:bg-thm_root1_color hover:bg-thm_root1_color hover:w-5  h-2 bg-black transform ease-in-out duration-700">
-          </div>
-        </a>
+       <Pagination className="w-4" />
       );
     },
   };
