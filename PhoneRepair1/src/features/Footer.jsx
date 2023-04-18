@@ -80,7 +80,11 @@ function Footer() {
             <p>Google</p>
           </li>
           <li className="hover:text-thm_root1_color transition-all duration-600">Franchising</li>
-          <li className="hover:text-thm_root1_color transition-all duration-600">Privacy Policy</li>
+          <li className="hover:text-thm_root1_color transition-all duration-600">
+            <NavLink to="privacy-policy">
+            Privacy Policy
+            </NavLink>
+           </li>
         </ul>
       </div>
 

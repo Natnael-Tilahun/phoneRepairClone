@@ -1,16 +1,15 @@
 import React from "react";
 
-export const Button = ({ className, firstLetter, text }) => {
+export const Button = ({ className, firstLetter, text, btnOnClick }) => {
   return (
-    <div className="">
-      <a
+      <p
         id="banner-cta"
         className={`"rounded-lg font-normal" bg-thm_root1_color px-7 py-2 text-lg ${className}`}
         data-wow-duration="3s"
         data-wow-delay="0.5s"
-        href="#store-finder"
         data-text="Repair My Device"
         style={{ display: "initial" }}
+        onClick={btnOnClick}
       >
         {" "}
         <span>{firstLetter}</span>
@@ -41,7 +40,6 @@ export const Button = ({ className, firstLetter, text }) => {
           <span>i</span>
           <span>c</span>
           <span>e</span> */}
-      </a>
-    </div>
+      </p>
   );
 };

@@ -128,21 +128,23 @@ export const Header = () => {
         )}
         <div className="flex h-full flex-col items-center justify-center gap-32">
           <ul className="flex flex-col items-center gap-8 text-2xl font-medium text-thm_root2_color shadow-lg ">
-            <NavLink to="repairs" onClick={scrollToTop}>
+            <NavLink to="repairs" onClick={() => {scrollToTop(), collapseMenu()}}
+>
               Repairs
             </NavLink>
-            <NavLink to="locations" onClick={scrollToTop}>
+            <NavLink to="locations"  onClick={() => {scrollToTop(), collapseMenu()}}
+>
               Locations
             </NavLink>
-            <NavLink to="about" onClick={scrollToTop}>
+            <NavLink to="about" onClick={() => {scrollToTop(), collapseMenu()}} >
               About
             </NavLink>
-            <NavLink to="contactus" onClick={scrollToTop}>
+            <NavLink to="contactus" onClick={() => {scrollToTop(), collapseMenu()}}>
               Contact Us
             </NavLink>
           </ul>
 
-          <NavLink to="/" onClick={scrollToTop}>
+          <NavLink to="/" onClick={() => {scrollToTop(), collapseMenu()}}>
             <img
               id="white-logo-img"
               alt="iFixandRepair Logo"

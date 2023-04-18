@@ -14,9 +14,9 @@ function Repairs() {
         title="Device Repairs"
         img="https://ifixandrepair.com/wp-content/themes/ifix-theme-2.0/images/banner/repairs_banner.jpg"
       />
-      <div className="flex w-full flex-col items-center gap-5 px-[5%] sm:px-[12%] md:px-[10%] lg:p-20  lg:px-[5%] xl:px-32">
+      <div className="flex w-full flex-col items-center gap-5 px-[5%] sm:px-[12%] md:px-[10%] lg:py-10  lg:px-[5%] xl:px-32">
         {/* Select Store Section Start */}
-        <div className="flex h-full w-full flex-col  items-center justify-center bg-thm_background px-[5%] py-8 md:px-[10%] lg:px-[5%]">
+        <div className="flex h-full w-full flex-col  items-center justify-center bg-thm_background px-[5%] py-8 md:px-[10%] lg:px-[0%]">
           <div
             className=" flex w-full rounded-lg bg-thm_root1_color p-4 text-lg uppercase md:w-2/3 lg:w-1/2 "
             onClick={collapseHandler}

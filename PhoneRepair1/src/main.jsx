@@ -8,6 +8,8 @@ import Locations from "./pages/Locations";
 import ContactUs from "./pages/ContactUs";
 import Home from "./pages/Home";
 import Repairs from "./pages/Repairs";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import LocationDetails from "./pages/LocationDetails";
 // import "remixicon/fonts/remixicon.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -20,6 +22,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route path="/about" element = { <About /> } />
             <Route path="/locations" element = { <Locations />} />
             <Route path="/contactus" element = { <ContactUs /> } />
+            <Route path="/privacy-policy" element = { <PrivacyPolicy /> } />
+            <Route path="/location-details" element = { <LocationDetails /> } />
           </Route>
       </Routes>
     </BrowserRouter>
